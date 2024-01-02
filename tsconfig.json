@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "module": "commonjs" /* Specify what module code is generated. */,
+    "lib": ["ESNext", "DOM"],
+    "allowJs": true,
+    "outDir": "dist" /* Specify an output folder for all emitted files. */,
+    "rootDir": ".",
+    "removeComments": true /* Disable emitting comments. */,
+
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true,
+
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "__tests__", "coverage"]
+}
